@@ -1,0 +1,40 @@
+<amp-analytics id="adobeanalytics" type="adobeanalytics" class="-amp-element -amp-layout-fixed -amp-layout-size-defined -amp-layout" aria-hidden="true" style="width: 1px; height: 1px; display: none;">
+    <script type="application/json">
+    {
+        "transport": {
+            "xhrpost": false,
+            "beacon": true
+        },
+        "requests": {
+            "base": "https://${trackingServer}/b/ss/${accounts}/1/AMP-0.1/s${random}",
+            "prefix": "&vid=${visitorId}&pageName=${articleTitle}&g=${canonicalUrl}&canonicalUrl=${canonicalUrl}&r=${documentReferrer}&viewer=${viewer}&events=event8",
+            "customVars": "&v1=${company}&v2=${brand}&v3=${site}&v9=${contentType}&v10=D=pageName&v11=${visitorId}&v12=${PCSID}&v16=${articleId}&v17=${articleTitle}&v18=${articleByline}&v19=${syndicationSource}&v20=${publishedDate}",
+            "commonVars": "&v22=${timestamp}&v25=${timezone}&v34=D=g&v35=${ampdocUrl}&v56=D=r&v60=${pageLoadTime}",
+            "customProps": "&p1=D=v1&p2=D=v2&p3=D=v3&p9=D=v9&p10=D=pageName&p11=${visitorId}&p12=D=v12&p16=D=v16&p17=${title}&p18=D=v18&p19=D=v19&p20=D=v20&p22=${timestamp}&p25=${timezone}&p34=D=g&p35=${ampdocUrl}&p56=D=r&p60=${pageLoadTime}",
+            "suffix": "&s=${availableScreenWidth}x${availableScreenHeight}&c=${screenColorDepth}&bw=${screenWidth}&bh=${screenHeight}&AQE=1",
+            "pageview": "${base}?AQB=1${prefix}&pageURL=${canonicalUrl}${customVars}${commonVars}${customProps}${suffix}"
+        },
+        "vars": {
+            "trackingServer": "newscorpau.sc.omtrdc.net",
+            "accounts": "newscorpau-googleamp",
+            "company": "news corp au",
+            "contentType": "amp article",
+            "brand": "dailytelegraph",
+            "site": "dailytelegraph amp",
+            "articleId": "4226c32bca0cd1b09451e13553dc52bf",
+            "articleByline": "Kirstie Chlopicki",
+            "articleTitle": "Pugs gather for fun run success",
+            "publishedDate": "2016-08-16T04:20:00.000Z",
+            "syndicationSource": "Macarthur Chronicle Campbelltown",
+            "visitorId": "CLIENT_ID(amp_id)"
+        },
+        "triggers": {
+            "defaultPageview": {
+                "on": "visible",
+                "request": "pageview"
+            }
+        }
+    }
+
+    </script>
+</amp-analytics>
